@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nirai</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="simple_job">Simple job</string>
+    <string name="network_job">Network job</string>
+</resources>
