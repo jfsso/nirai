@@ -88,8 +88,21 @@ Job job = new Job(SimpleJobRunner.class, args);
 Download
 --------
 
-Maven repository will be provided soon. :)
+Gradle:
+```
+dependencies {
+    compile 'jp.joao:nirai:0.1.0'
+}
+```
 
+Maven:
+```
+<dependency>
+	<groupId>jp.joao</groupId>
+	<artifactId>nirai</artifactId>
+	<version>0.1.0</version>
+</dependency>
+```
 
 License
 -------
