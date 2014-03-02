@@ -14,10 +14,9 @@ gen-external-apklibs
 
 # Gradle
 .gradle
+
+# generated files
 build
-gradle
-gradlew
-gradlew.bat
 
 # Maven
 target
