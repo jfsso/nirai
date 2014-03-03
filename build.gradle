@@ -13,7 +13,6 @@ allprojects {
 
     repositories {
         mavenCentral()
-        mavenLocal()
     }
 }
 
