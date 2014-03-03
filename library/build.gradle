@@ -9,4 +9,16 @@ dependencies {
     compile 'com.google.code.gson:gson:2.2.4'
 }
 
+android.libraryVariants.all { variant ->
+    def name = variant.buildType.name
+
+    // Only attach a jar for non-debug build types.
+    if (!name.equals(com.android.builder.BuilderConstants.DEBUG)) {
+        def task = project.tasks.create "jar${name.capitalize()}", Jar
+        task.dependsOn variant.javaCompile
+        task.from variant.javaCompile.destinationDir
+        artifacts.add('archives', task);
+    }
+}
+
 apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
