@@ -1,5 +1,9 @@
-Nirai - A job queue for Android
-===============================
+[Deprecated] Nirai - A job queue for Android
+============================================
+
+**Depecated! This library is not maintained.** Look at [this](https://github.com/yigit/android-priority-jobqueue) or [this](https://developers.google.com/cloud-messaging/network-manager) for possible better solutions.
+
+***
 
 Nirai is a job queue written for Android to schedule jobs that run on the background.
 
